@@ -68,10 +68,12 @@ class NewsList extends Component {
 		const { newsList } = this.state
 		return (
 			<div className="news">
-				{this.renderNews()}
-				{
-					newsList.length && <strong className={'news__count'}>Всего новостей: {newsList.length}</strong>
-				}
+				{newsList.length ?  
+					< Fragment >
+						{newsList.map(item => <Article key={item.id} text={item.text} author={item.author} />)}
+						<strong className={'news__count'}>Всего новостей: {newsList.length}</strong>
+					</Fragment> 
+				: <p>К сожалению новостей нет</p> }
 			</div>
 		);
 	}
