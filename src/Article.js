@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'; // ES6
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+
 class Article extends Component {
 	state = {
 		visible: false, // определили начальное состояние
@@ -19,7 +21,8 @@ class Article extends Component {
 				<Typography variant="overline" gutterBottom>
 					<p className="news__text">{text}</p>
 				</Typography>
-				<a onClick={this.handleReadMoreClck} href="#" className='news__readmore'>Скрыть/показать</a>
+				
+				<button className="k-button" onClick={this.handleReadMoreClck}>Animate</button>
 				<Typography variant="subtitle1" gutterBottom>
 					{ /* если visible, то показывай */
 						visible && <p className='news__big-text'>{bigText}</p>

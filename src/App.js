@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import News from './newsList.js';
+import News from './Accordeon.js';
 import PrimarySearchAppBar from './Navbar.js';
 const App = () => {
 	return (
