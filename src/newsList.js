@@ -8,7 +8,7 @@ class NewsList extends Component {
 				id: 1,
 				author: 'Саша Печкин',
 				text: 'В четверг, четвертого числа...',
-				bigText: 'в четыре с четвертью часа четыре чёрненьких чумазеньких чертёнка чертили чёрными чернилами чертёж.'
+				bigText: 'В четыре с четвертью часа четыре чёрненьких чумазеньких чертёнка чертили чёрными чернилами чертёж.'
 			},
 			{
 				id: 2,
@@ -31,26 +31,13 @@ class NewsList extends Component {
 		]
 	}
 
-
-	renderNews = () => {
-		const { newsList } = this.state
-		let newsTemplate = null
-		if (newsList.length) {
-			newsTemplate = newsList.map(item => <Article key={item.id} text={item.text} author={item.author} />)
-		} else {
-			newsTemplate = <p>К сожалению новостей нет</p>
-		}
-
-		return newsTemplate
-	}
-
 	render() {
 		const { newsList } = this.state
 		return (
 			<div className="news">
 				{newsList.length ?
 					< Fragment >
-						{newsList.map(item => <Article key={item.id} text={item.text} author={item.author} />)}
+						{newsList.map(item => <Article key={item.id} text={item.text} author={item.author} bigText={item.bigText} />)}
 						<strong className={'news__count'}>Всего новостей: {newsList.length}</strong>
 					</Fragment>
 					: <p>К сожалению новостей нет</p>}
