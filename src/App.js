@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import './App.css';
 import News from './newsList.js';
 import PrimarySearchAppBar from './Navbar.js';

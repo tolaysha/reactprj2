@@ -1,5 +1,6 @@
-import React, { Component, Fragment } from 'react';
-class Article extends React.Component {
+import React, { Component} from 'react';
+import PropTypes from 'prop-types'; // ES6
+class Article extends Component {
 	render() {
 		const { author, text } = this.props
 		return (
@@ -10,4 +11,9 @@ class Article extends React.Component {
 		)
 	}
 }
+Article.propTypes = {
+		author: PropTypes.string.isRequired,
+		text: PropTypes.string.isRequired
+}
+
 export default Article;
