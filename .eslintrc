@@ -4,11 +4,8 @@
 		"prettier"
 	],
 	"rules": {
-		"jsx-quotes": [
-			1,
-			"prefer-double"
-		]
-	},
+		"quotes": [2]
+	  },
 	"plugins": [
 		"prettier"
 	]

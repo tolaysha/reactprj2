@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types'; // ES6
-import Typography from '@material-ui/core/Typography';
+import React, { Component } from "react";
+import PropTypes from "prop-types"; // ES6
+import Typography from "@material-ui/core/Typography";
 
 class Article extends Component {
 	state = {
