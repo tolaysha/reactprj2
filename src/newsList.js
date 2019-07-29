@@ -28,19 +28,27 @@ class NewsList extends Component {
 				text: 'Бесплатно. Без смс, про реакт, заходи - https://maxpfrontend.ru',
 				bigText: 'Еще есть группа VK, telegram и канал на youtube! Вся инфа на сайте, не реклама!'
 			}
-		]
+		],
+		counter : 4
+}
+
+	handleAllClck = (e) => { // добавили метод
+		e.preventDefault()
+		this.setState({ counter: ++this.state.counter })
 	}
 
 	render() {
 		const { newsList } = this.state
+		const { counter } = this.state
 		return (
-			<div className="news">
+			<div className="news" onClick={this.handleAllClck}>
 				{newsList.length ?
 					< Fragment >
 						{newsList.map(item => <Article key={item.id} text={item.text} author={item.author} bigText={item.bigText} />)}
 						<strong className={'news__count'}>Всего новостей: {newsList.length}</strong>
 					</Fragment>
 					: <p>К сожалению новостей нет</p>}
+					<p>All click =  {counter}</p>
 			</div>
 		);
 	}
