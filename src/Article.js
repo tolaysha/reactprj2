@@ -8,6 +8,7 @@ class Article extends Component {
 	}
 	handleReadMoreClck = (e) => { // добавили метод
 		e.preventDefault()
+		e.currentTarget.parentElement.classList.add("myClass")
 		this.setState({ visible: !this.state.visible })
 	}
 	render() {
