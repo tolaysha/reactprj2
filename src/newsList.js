@@ -34,7 +34,6 @@ class NewsList extends Component {
 
 	handleAllClck = (e) => { // добавили метод
 		e.preventDefault()
-		debugger
 		this.setState({ counter: ++this.state.counter })
 	}
 

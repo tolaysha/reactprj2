@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types"; // ES6
 class AddInput extends Component {
 	constructor(props) {
 		super(props)
-		this.input = React.createRef()
+		this.input = 1
 	}
 	state = {
 		Author: "",
@@ -11,7 +12,8 @@ class AddInput extends Component {
 	}
 
 	onBtnClickHandler = (e) => {
-		alert(this.input.current.value)
+		debugger
+		console.log(this.input)
 	}
 	componentDidMount() {
 		// ставим фокус в input
@@ -29,17 +31,17 @@ class AddInput extends Component {
 	render() {
 		const { Author , NewsText , formAgree } = this.state
 		return (
-			<form className='add'>
+			<div className='add'>
 				<input
 					type='text'
 					className='add__author'
-					placeholder={Author}
+					placeholder="Input value"
 					onChange={this.handleNameChange }
 					value={Author}/>
 				<textarea
 					className='add__text'
 					onChange={this.handleTextChange }
-					placeholder={NewsText}
+					placeholder="Input value"
 					value={NewsText}>
 				</textarea>
 				<label className='add__checkrule'	>
@@ -53,9 +55,15 @@ class AddInput extends Component {
 					disabled={!formAgree}>
 					Добавить
         		</button>
-			</form>
+			</div>
 		)
 	}
 }
+
+// AddInput.propTypes = {
+// 	Author: PropTypes.string.isRequired,
+// 	NewsText: PropTypes.string.isRequired,
+// 	formAgree: PropTypes.bool.isRequired
+// }
 export default AddInput;
 

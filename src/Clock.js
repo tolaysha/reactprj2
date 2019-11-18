@@ -4,11 +4,10 @@ class Clock extends Component {
 		data: new Date().toLocaleTimeString()
 	}
 	tick(){
-		debugger
-		this.setState({data: new Date().toLocaleTimeString()})
+		this.setState()
+		this.setState((state) => ({data: new Date().toLocaleTimeString()}));
 	}
 	componentDidMount(){
-		debugger
 		setInterval(()=>this.tick(), 1000)
 	}
 	render(){
