@@ -1,10 +1,9 @@
 import React from "react";
+import {BrowserRouter, Route} from "react-router-dom";
 import "./App.css";
-import News from "./newsList.js";
-import AddInput from "./AddInput.js";
 import PrimarySearchAppBar from "./Navbar.js";
-import Clock from "./Clock.js";
 import LeftBar from "./LeftBar.js";
+import NewsPage from "./pages/NewsPage.js";
 class App extends React.Component {
 	state = {
 	  news: [], // в начальное состояние положили значение из переменной
@@ -12,14 +11,11 @@ class App extends React.Component {
   
 	render() {
 		return (
-			<React.Fragment>
+			<BrowserRouter>
 				<PrimarySearchAppBar />
 				<LeftBar />
-				<Clock />
-				<h3>Новости</h3>
-				<AddInput />
-				<News />
-			</React.Fragment>
+				<Route path='/news' component={NewsPage}/>
+			</BrowserRouter>
 		)
 	}
   }
