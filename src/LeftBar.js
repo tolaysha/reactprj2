@@ -26,7 +26,7 @@ const LeftBar =() => {
 	return (
 		<div id="leftbar">
 			<ul>
-				{menuItems.map(item => <NavLink to={item.to}><li key={item.id}>{item.name}</li></NavLink>)}
+				{menuItems.map(item => <NavLink to={item.to} key={`NavLink ${item.to}`}><li key={item.id}>{item.name}</li></NavLink>)}
 			</ul>
 		
 		</div>

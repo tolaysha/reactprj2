@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Article from "./NewsPage/Article.js/index.js";
+import Article from "./Article.js";
 class NewsList extends Component {
 
 	state = {
