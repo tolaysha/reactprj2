@@ -1,64 +1,64 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-height: 100%;
-}
-html {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+	  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	  sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	min-height: 100%;
-	padding-left: 22px;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-.article {	
-	transition: all ease 2s;
-
-}
-.article:hover{
-	border-radius: 10%;
-
-}
-.myClass{
-	transform: translate(0px,5px);
-}
-
-#leftbar {
-	width: 200px;
-	height: 100%;
-	left: -180px;
-	position: fixed;
-	top: 0;
-	background-image: url('./medea/menu-button.png');
-	opacity: .94;
-	background-color: #4f4f4f;
-	background-repeat: no-repeat;
-	background-position: 182px 5px;
-	background-size: 16px;
-	box-shadow: 2px 0 5px #c0c0c0;;
-	transition: all ease 1s;
-	cursor: pointer
-}
-#leftbar:hover{
-	left:0;
-}
-#leftbar ul {
-	margin-top: 30px;
-	padding-left: 0;
-}
-
-#leftbar li {
-	list-style-type: none;
-	line-height: 170%;
-	padding:5px 0 5px 30px
-}
-
-#leftbar li:hover {
-	background: #c0c0c0
-
-}
+  }
+  html {
+	  min-height: 100%;
+	  padding-left: 22px;
+  }
+  
+  code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+	  monospace;
+  }
+  .article {	
+	  transition: all ease 2s;
+  
+  }
+  .article:hover{
+	  border-radius: 10%;
+  
+  }
+  .myClass{
+	  transform: translate(0px,5px);
+  }
+  
+  #leftbar {
+	  width: 200px;
+	  height: 100%;
+	  left: -180px;
+	  position: fixed;
+	  top: 0;
+	  background-image: url('./medea/menu-button.png');
+	  opacity: .94;
+	  background-color: #4f4f4f;
+	  background-repeat: no-repeat;
+	  background-position: 182px 5px;
+	  background-size: 16px;
+	  box-shadow: 2px 0 5px #c0c0c0;;
+	  transition: all ease 1s;
+	  cursor: pointer
+  }
+  #leftbar:hover{
+	  left:0;
+  }
+  #leftbar ul {
+	  margin-top: 30px;
+	  padding-left: 0;
+  }
+  
+  #leftbar li {
+	  list-style-type: none;
+	  line-height: 170%;
+	  padding:5px 0 5px 30px
+  }
+  
+  #leftbar li:hover {
+	  background: #c0c0c0
+  
+  }

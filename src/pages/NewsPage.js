@@ -1,8 +1,8 @@
 import React from "react";
 import "../App.css";
-import News from "../newsList.js";
-import AddInput from "../AddInput.js";
-import Clock from "../Clock.js";
+import News from "../PageContent/newsList.js";
+import AddInput from "../PageContent/AddInput.js";
+import Clock from "../PageContent/Clock.js";
 class NewsPage extends React.Component {
 	state = {
 	  news: [], // в начальное состояние положили значение из переменной

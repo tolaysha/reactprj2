@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter, Route} from "react-router-dom";
 import "./App.css";
-import PrimarySearchAppBar from "./Navbar.js";
+import PrimarySearchAppBar from "./PageContent/Navbar.js";
 import LeftBar from "./LeftBar.js";
 import NewsPage from "./pages/NewsPage.js";
 class App extends React.Component {
