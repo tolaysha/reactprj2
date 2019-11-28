@@ -19,6 +19,11 @@ const LeftBar =() => {
 		},
 		{
 			id:3,
+			name:"Santa",
+			to: "Santa"
+		},
+		{
+			id:4,
 			name:"Setting",
 			to: "setting"
 		}
