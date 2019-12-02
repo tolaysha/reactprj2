@@ -6,6 +6,9 @@ const SantaCalc = () =>{
 
 	let [People,setPeople] = useState(["Yuls", "Tols","Yegor","Nastya"]);
 
+	const buttonClick = () => {
+		alert(2);
+	}
 
 
 	return (
@@ -14,15 +17,18 @@ const SantaCalc = () =>{
 				type='text'
 				className='add__author'
 				placeholder="Input value"
-				//onChange={this.handleNameChange }
-				value={12}/>
-			<button
-				className='add__btn'
-				//onClick={this.onBtnClickHandler}
+				onChange={console.log(2) }
+				defaultValue={12}/>
+			<a  className='button'
+				onClick={buttonClick}
+				href
 				//</div>disabled={!formAgree}
 				>
+					<svg className="button__svg">
+						<rect className="button__rect"></rect>
+					</svg>
 				Добавить
-			</button>
+			</a>
 		</div>
 	)
 }
